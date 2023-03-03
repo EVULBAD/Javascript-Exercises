@@ -12,7 +12,13 @@ const subtract = function() {
 };
 
 const sum = function() {
-	
+  let sum = 0,
+    args = arguments[0];
+  for (i = 0; i < args.length; i++) {
+    sum += parseInt(args[i]);
+    console.log(parseInt(args[i]));
+  }
+  return sum;
 };
 
 const multiply = function() {
