@@ -1,9 +1,14 @@
 const add = function() {
-	
+  let sum = 0;
+  for (i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+    }
+  return sum;
 };
 
 const subtract = function() {
-	
+  let difference = Math.abs(arguments[0] - arguments[1]);
+  return difference;
 };
 
 const sum = function() {
